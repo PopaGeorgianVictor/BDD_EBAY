@@ -14,7 +14,7 @@ class Search_results_page(Base_page):
 		property = []
 
 		def open_identified_product(self):
-				self.chrome.find_element(*self.ELEMENT_TO_BE_ADDED_TO_CART).click()
+				self.driver.find_element(*self.ELEMENT_TO_BE_ADDED_TO_CART).click()
 
 		def add_element_to_dictionary(self, property, value):
 				self.property_dictionary[property] = value
